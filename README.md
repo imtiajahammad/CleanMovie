@@ -26,9 +26,14 @@ Here the domains are-> movie, customer details etc.
 Domain does not depend on anything
 Application depends on Domain, domain only talks to application
 Infrastructure depends on Application
+Presentation depends on Application layer
 9. add Application project referenct to CleanMovie.Infrastructure project
 10. Add new class named "MovieRepository" and implement IMovieRepository from application project
-11. 
+11. Add presentation layer which is webAPI project in the same directory
+12. Add Application project reference to the web api project
+13. Add controller named "MoviesController.cs" and add api method for getting movies using service from application
+14. added dependency injection in the program for IMovieServie
+15. added dependency injection in the program for IMovieRepository(for that we have to add Infrastructure project reference to the presentation layer as IMovieRepository is not defined which one to implement)
 
 
 

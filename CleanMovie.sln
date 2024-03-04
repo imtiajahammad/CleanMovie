@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMovie.Application", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMovie.Infrastructure", "CleanMovie.Infrastructure\CleanMovie.Infrastructure.csproj", "{AA60A42E-85D1-4A7B-98CF-9DA869B6826C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMovie.API", "CleanMovie.API\CleanMovie.API.csproj", "{6B361923-2CD1-4C11-AD33-773501E21696}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,13 @@ Global
 		{AA60A42E-85D1-4A7B-98CF-9DA869B6826C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA60A42E-85D1-4A7B-98CF-9DA869B6826C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA60A42E-85D1-4A7B-98CF-9DA869B6826C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{833CD481-D22B-43EB-A32C-EFC583459D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833CD481-D22B-43EB-A32C-EFC583459D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833CD481-D22B-43EB-A32C-EFC583459D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833CD481-D22B-43EB-A32C-EFC583459D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B361923-2CD1-4C11-AD33-773501E21696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B361923-2CD1-4C11-AD33-773501E21696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B361923-2CD1-4C11-AD33-773501E21696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B361923-2CD1-4C11-AD33-773501E21696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
