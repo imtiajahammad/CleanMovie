@@ -37,5 +37,33 @@
 * Reference: https://www.youtube.com/watch?v=OzZJqVQrVU0&list=PLBapd_vePld_986VHC2UbcPY4Q2j9-lpT&ab_channel=CodeUnparalleled
 
 
+---------------------------------------
 
+
+1. Add nuget package "EntityFrameworkCore", "EntityFrameworkCore.Design", "EntityFrameworkCore.Tools" "EntityFrameworkCore.SqlServer" into infrastructure
+2. Add CreateMovie method into IMovieRepository
+3. Implement the method CreateMovie with noImplementation in MovieRepository
+4. Add CreateMovie method into IMovieService
+5. Implement the method CreateMovie with noImplementation in MovieService
+6. Add MovieDbContext class into Infrastructure and inherit DbContext and add Entity Movie
+7. Add constructor and inject MovieDbContext into MovieRepository class
+8. Rewrite the CreateMovie and GetAllMovies method with MovieDbContext and remove the static movie list
+9. Rewrite the CreateMovie method with the help of IMovieRepository object in MovieService class
+10. Add post api method in MoviesController.cs
+11. Add ConnectionStrings in appsettings.json in the CleanMovie.API
+12. Register Configurationmanager and add database service in the program file in the CleanMovie.API
+13. Add nuget package "EntityFrameworkCore.Tools" into API project
+14. Register the DbContext into services into program file
+15. Open Package manager Console And write command for adding migration
+- add-migration InitialMigration  // for vs
+- dotnet ef migrations add InitialMigration  // for vscode
+16. then update the database using this command
+- dotnet ef database update
+17. 
+
+
+
+
+
+* Reference: https://www.youtube.com/watch?v=HCuoBwXS95o&list=PLBapd_vePld_986VHC2UbcPY4Q2j9-lpT&index=3&ab_channel=CodeUnparalleled
 

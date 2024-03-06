@@ -25,4 +25,11 @@ public class MoviesController : ControllerBase
         var moviesFromService = _service.GetAllMovies();
         return Ok(moviesFromService);
     }
+
+    [HttpPost]
+    public ActionResult<Movie> PostMovie(Movie movie)
+    {
+        var movieResult = _service.CreateMovie(movie);
+        return Ok(movie);
+    }
 }
