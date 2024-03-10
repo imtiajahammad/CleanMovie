@@ -59,7 +59,6 @@
 - dotnet ef migrations add InitialMigration  // for vscode
 16. then update the database using this command
 - dotnet ef database update
-17. 
 
 
 
@@ -67,3 +66,44 @@
 
 * Reference: https://www.youtube.com/watch?v=HCuoBwXS95o&list=PLBapd_vePld_986VHC2UbcPY4Q2j9-lpT&index=3&ab_channel=CodeUnparalleled
 
+
+---------------------------------------
+
+1. Add a class named class "Member" in cleanMovie.Api
+2. Add a class "Rental" in CleanMovie.API
+3. Modify the class "Movie" 
+- Modifying this class is going to make problem on migrations, so I deleted the db and migration folder for not having the problem
+4. Add a class named "MovieRental" in CleanMovie.API
+5. Go to MovieDbContext in the Infrastructure and add other Entities and add the overRide method to maintain the properties like primaryKey, foreignKey, decimals etc
+6. now add the migrations
+- dotnet ef migrations add AddedMoviesRentalMembers
+- dotnet ef database update
+-- this is going to make problem as there was already Movie entity in the db, so I deleted the migration folder and deleted the db and added the initial migration and update the db for shortcut resolve
+- dotnet ef migrations add InitialMigration
+- dotnet ef database update
+
+
+* Reference: https://www.youtube.com/watch?v=KeTi_x8_4ao&list=PLBapd_vePld_986VHC2UbcPY4Q2j9-lpT&index=3
+
+
+
+
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dotnet ef migrations add MigrationName
+dotnet ef database update
+dotnet ef migrations remove
